@@ -18,6 +18,12 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 vim.keymap.set("n", "|", ":vsplit<CR>")
 vim.keymap.set("n", "\\", ":split<CR>")
 
+--Buffer resizing
+vim.keymap.set("n", ">", ":vertical resize -2<CR>")
+vim.keymap.set("n", "<", ":vertical resize +2<CR>")
+vim.keymap.set("n", "_", ":resize -2<CR>")
+vim.keymap.set("n", "+", ":resize +2<CR>")
+
 -- Neo-tree
 vim.keymap.set("n", "<leader>e", ":Neotree left toggle reveal<CR>")
 

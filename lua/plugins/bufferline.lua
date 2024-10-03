@@ -1,8 +1,8 @@
 return {
 	{
-		'akinsho/bufferline.nvim',
+		"akinsho/bufferline.nvim",
 		version = "*",
-		dependencies = 'nvim-tree/nvim-web-devicons',
+		dependencies = "nvim-tree/nvim-web-devicons",
 		config = function()
 			local bufferline = require("bufferline")
 
@@ -11,6 +11,7 @@ return {
 
 			bufferline.setup({
 				options = {
+					separator_style = "padded_slant",
 					mode = "buffers",
 					numbers = "none",
 					color_icons = false,
@@ -49,5 +50,5 @@ return {
 				},
 			})
 		end,
-	}
+	},
 }
