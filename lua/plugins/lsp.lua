@@ -1,10 +1,12 @@
 return {
 	{
-		'neovim/nvim-lspconfig',
+		"neovim/nvim-lspconfig",
 		config = function()
-			local lspconfig = require('lspconfig')
+			local venv_lsp = require("venv-lsp")
+			venv_lsp.init()
+			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
-			lspconfig.lua_ls.setup({ settings = { Lua = { diagnostics = { globals = { 'vim', 'require' } } } } })
+			lspconfig.lua_ls.setup({ settings = { Lua = { diagnostics = { globals = { "vim", "require" } } } } })
 			lspconfig.pyright.setup({})
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("UserLspConfig", {}),
