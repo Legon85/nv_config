@@ -11,7 +11,7 @@ return {
 
 			bufferline.setup({
 				options = {
-					separator_style = "padded_slant",
+					separator_style = "slant",
 					mode = "buffers",
 					numbers = "none",
 					color_icons = false,
