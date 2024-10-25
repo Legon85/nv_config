@@ -37,3 +37,6 @@ vim.keymap.set("n", "<c-x>", ":BufferLineCloseOthers<CR>")
 vim.keymap.set("n", "<leader>tf", ":ToggleTerm direction=float<CR>")
 vim.keymap.set("n", "<leader>th", ":ToggleTerm direction=horizontal<CR>")
 vim.keymap.set("n", "<leader>tv", ":ToggleTerm direction=vertical size=40<CR>")
+
+--CodeRunner
+vim.keymap.set("n", "<leader>r", ":RunCode<CR>")
