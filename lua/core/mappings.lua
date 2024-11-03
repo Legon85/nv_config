@@ -40,3 +40,7 @@ vim.keymap.set("n", "<leader>tv", ":ToggleTerm direction=vertical size=40<CR>")
 
 --CodeRunner
 vim.keymap.set("n", "<leader>r", ":RunCode<CR>")
+
+--Codeium
+vim.g.codeium_enabled = false
+vim.keymap.set("n", "<leader>co", ":CodeiumToggle<CR>")
