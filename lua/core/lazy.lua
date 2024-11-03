@@ -22,5 +22,9 @@ require("lazy").setup({
 		{ import = "plugins" },
 	},
 	-- automatically check for plugin updates
-	checker = { enabled = true },
+	change_detection = { notify = false },
+	checker = {
+		enabled = true, -- automatically check for plugin updates
+		notify = false, -- get a notification when new updates are found
+	},
 })
